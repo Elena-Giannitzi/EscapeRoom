@@ -56,8 +56,6 @@ interface SDSContext {
   daytime: any;
   answer: any;
   personIs:any;
-  answerWho: any;
-  affirm:any;
   info: any;
   prediction:any;
   topIntent:any;
