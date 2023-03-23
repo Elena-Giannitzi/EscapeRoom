@@ -6,7 +6,7 @@
 
 html, body {
   height: 100vh;
-  background: #d9e2cfb3;
+  background: url("LS1.6be6f5b9.jpg") 0 0 / cover;
 }
 
 .App {
@@ -29,7 +29,7 @@ html, body {
 }
 
 .control:hover .circle-click {
-  background: #deff8a;
+  background: #43483755;
 }
 
 .control .prompt img {
@@ -39,18 +39,21 @@ html, body {
 }
 
 .control .status, .control .status-talk {
-  width: 100vw;
+  width: 90vw;
   font-family: IBM Plex Mono, monospace;
   font-style: italic;
   font-weight: light;
   text-align: left;
-  color: #063746;
+  color: #e8edee2e;
   z-index: 1;
-  padding-top: 10vh;
-  padding-left: 50px;
+  padding-top: 80vh;
+  padding-left: 455px;
   padding-right: 20px;
-  font-size: 20pt;
-  bottom: 0;
+  font-size: 18pt;
+  position: absolute;
+  top: 80%;
+  left: 0;
+  transform: translateY(-50%);
 }
 
 .control .status .status-text, .control .status-talk .status-text {
@@ -60,24 +63,25 @@ html, body {
 }
 
 .control .circle, .control .circle-recognising, .control .circle-speaking, .control .circle-click {
-  width: 80px;
-  height: 80px;
+  width: 280px;
+  height: 90px;
   cursor: pointer;
   z-index: 0;
-  background-color: #cd1515;
+  background-color: #a9999915;
   border: 0;
   border-radius: 50px;
   position: absolute;
-  left: -40px;
+  bottom: -26px;
+  left: 430px;
 }
 
 .control .circle-click {
-  background-color: #fff;
+  background-color: #b8a8a81a;
   border: 0;
 }
 
 .control .circle-speaking {
-  background-color: #fff;
+  background-color: #d7cece0d;
   border: 0;
   animation: 2s infinite bordering;
 }
@@ -105,7 +109,7 @@ html, body {
 
 .flex {
   cursor: pointer;
-  background: #fff;
+  background: #ded5d539;
   border: 2px solid #063746;
   border-radius: 5px;
   flex-basis: 20vw;
@@ -114,7 +118,7 @@ html, body {
 }
 
 .flex:hover {
-  background: #deff8a;
+  background: #d4d9c41d;
 }
 
 img {
@@ -139,29 +143,29 @@ img {
 
 @keyframes bordering {
   0% {
-    box-shadow: 0 0 #deff8a80;
+    box-shadow: 0 0 #d3d6cc3d;
   }
 
   50% {
-    box-shadow: 0 0 0 8vh #deff8ae6;
+    box-shadow: 0 0 0 8vh #d9dece15;
   }
 
   100% {
-    box-shadow: 0 0 #deff8a80;
+    box-shadow: 0 0 #c7cdbc48;
   }
 }
 
 @keyframes bordersize {
   0% {
-    box-shadow: 0 0 #ffffff80;
+    box-shadow: 0 0 #d1cdcd24;
   }
 
   50% {
-    box-shadow: 0 0 0 8vh #ffffffe6;
+    box-shadow: 0 0 0 8vh #dedada25;
   }
 
   100% {
-    box-shadow: 0 0 #ffffff80;
+    box-shadow: 0 0 #c7c1c114;
   }
 }
 
