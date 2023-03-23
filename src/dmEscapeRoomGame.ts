@@ -3136,7 +3136,7 @@ Moveon: {
           cond: (context) => !!getEntity(context, "shutDown"),
         },
         {
-          target: "Congrats",
+          target: "CongratsMelissaStorage",
           cond: (context) => !!getEntity(context, "keyword"),
         },
         {
@@ -3179,6 +3179,14 @@ Moveon: {
       entry: send((context) => ({
         type: "SPEAK",
         value: `You made it ${context.name}! You really made it. You can move on now`
+      })),
+      on: { ENDSPEECH: "StorageRoom"},
+    },
+    CongratsMelissaStorage: {
+      id: "CongratsMelissaStorage",
+      entry: send((context) => ({
+        type: "SPEAK",
+        value: `You know the secret word! Wow! The answer to one of the riddles is "Pen". Hope it helps`
       })),
       on: { ENDSPEECH: "StorageRoom"},
     },
@@ -3475,7 +3483,7 @@ Moveon: {
             cond: (context) => !!getEntity(context, "shutDown"),
           },
           {
-            target: "CongratsChandelier",
+            target: "CongratsMelissaLibrary",
             cond: (context) => !!getEntity(context, "keyword"),
           },
           {
@@ -3518,6 +3526,14 @@ Moveon: {
         entry: send((context) => ({
           type: "SPEAK",
           value: `You made it ${context.name}! You really made it. You can move on now`
+        })),
+        on: { ENDSPEECH: "LibraryRoom"},
+      },
+      CongratsMelissaLibrary: {
+        id: "CongratsMelissaLibrary",
+        entry: send((context) => ({
+          type: "SPEAK",
+          value: `You made it ${context.name}! You called her out! That's what mom used to do as well. The answer to one of the riddles is "their breath". Hope it helps`
         })),
         on: { ENDSPEECH: "LibraryRoom"},
       },
@@ -3934,7 +3950,7 @@ Moveon: {
           cond: (context) => !!getEntity(context, "shutDown"),
         },
         {
-          target: "CongratsWashingMachine",
+          target: "CongratsMelissaBasement",
           cond: (context) => !!getEntity(context, "keyword"),
         },
         {
@@ -3977,6 +3993,14 @@ Moveon: {
       entry: send((context) => ({
         type: "SPEAK",
         value: `You made it ${context.name}! You really made it. You can move on now`
+      })),
+      on: { ENDSPEECH: "BasementRoom"},
+    },
+    CongratsMelissaBasement: {
+      id: "CongratsMelissaBasement",
+      entry: send((context) => ({
+        type: "SPEAK",
+        value: `Take that Melissa! You get away from my friend! The answer to one of the riddles is "tomorrow". Hope that helps`
       })),
       on: { ENDSPEECH: "BasementRoom"},
     },
@@ -4453,6 +4477,14 @@ CongratsToolRack: {
       entry: send((context) => ({
         type: "SPEAK",
         value: `You made it ${context.name}! You really made it. You can move on now`
+      })),
+      on: { ENDSPEECH: "BedroomRoom"},
+    },
+    CongratsMelissaBedroom: {
+      id: "CongratsMelissaBedroom",
+      entry: send((context) => ({
+        type: "SPEAK",
+        value: `Yay! We are a very good team ${context.name}. The answer to one of the riddles is "paper". Hope that helps.`
       })),
       on: { ENDSPEECH: "BedroomRoom"},
     },

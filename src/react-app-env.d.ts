@@ -69,6 +69,22 @@ interface SDSContext {
   helpme: any;
   shutDown:any;
   again: any;
+
+  //for the game
+
+  how:any;
+  who:any;
+  what: any;
+  when: any;
+  why: any;
+  family:any;
+  man:any;
+  computer:any;
+  landscape:any;
+  tv:any;
+  bed:any;
+  tool:any;
+  bottles:any;
 }
 
 type SDSEvent =
